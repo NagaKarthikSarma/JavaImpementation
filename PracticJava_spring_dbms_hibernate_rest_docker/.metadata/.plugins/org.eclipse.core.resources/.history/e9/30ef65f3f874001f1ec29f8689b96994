@@ -1,0 +1,23 @@
+package com.karthik.core.collections.threading;
+
+public class MultithreradConc extends Thread{
+
+	public static void main(String[] args) {
+		
+		
+		MultithreradConc  t1 = new MultithreradConc();
+		
+       
+	}
+
+	public void run() {
+		
+		int a=0;
+		for (a=0; a<10;a++) {
+			
+			System.out.println("the value of a: "+a);
+			
+		}
+	}
+	
+}

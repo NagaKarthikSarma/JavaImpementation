@@ -1,0 +1,19 @@
+package com.karthik.core.collections.queues;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.PriorityBlockingQueue;
+
+public class BlockingConcept {
+
+	public static void main(String[] args) {
+		PriorityBlockingQueue<Integer> abq = new PriorityBlockingQueue<Integer>();
+		
+		Thread t1 = new Thread();
+		
+
+	}
+
+	public void run() {
+		System.out.println("hello");
+	}
+}

@@ -1,0 +1,23 @@
+package com.karthik.core.oops;
+
+class parent{
+	public void parentMeth() {
+		
+		System.out.println("this is parent method");
+		
+	}
+	
+}
+
+public class Inherit {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	public void childMethod() {
+		
+		System.out.println("this is child method");
+	}
+}

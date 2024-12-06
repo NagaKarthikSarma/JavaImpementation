@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <description></description>
+    <display-name>Hello</display-name>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>org.karthik.com.Hello</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <url-pattern>/Hello</url-pattern>
+  </servlet-mapping>
+  <display-name>Zeb_JAVAEE</display-name>
+  <servlet>
+    <description></description>
+    <display-name>Hii</display-name>
+    <servlet-name>Hii</servlet-name>
+    <servlet-class>org.karthik.com.Hii</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hii</servlet-name>
+    <url-pattern>/Hii</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>Filter1</display-name>
+    <filter-name>Filter1</filter-name>
+    <filter-class>org.karthik.com.Filter1</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter1</filter-name>
+    <url-pattern>/Hii</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>org.karthik.webpage.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+</web-app>

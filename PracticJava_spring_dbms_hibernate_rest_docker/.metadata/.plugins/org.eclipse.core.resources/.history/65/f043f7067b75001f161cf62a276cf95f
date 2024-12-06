@@ -1,0 +1,8 @@
+package com.karthik.core.collections.threading;
+
+public class Snippet {
+	public static void main(String[] args) {
+		
+	}
+}
+

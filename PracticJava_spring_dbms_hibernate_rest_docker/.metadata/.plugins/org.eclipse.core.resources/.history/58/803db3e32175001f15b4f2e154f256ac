@@ -1,0 +1,32 @@
+Thread Concepts:
+DeadLock
+Interrupt()
+notify() 
+notifyall()
+join()
+
+
+Executor service:
+          ExecutorService executor = Executors.newFixedThreadPool(3) 
+          Thread t1= new Thread();
+          executor.execute(t1);
+          
+          
+          executor.shutdown();
+          
+ 
+ CountDownLatch:
+ class A{
+   public countDownLatch 
+   
+   public classname(CountDownLatch latch){
+   this.latch =latch;
+   }
+   public void run(){
+   latch.countdown();
+   }
+   public static void main(String[] args){
+   
+   countDownLatch latch = new CountDownLatch(5);
+    Thread t1= new Thread(latch);
+   

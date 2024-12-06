@@ -1,0 +1,12 @@
+package com.karthik.core.datatypes;
+
+public class TypeCastingDemo {
+
+	public static void main(String[] args) {
+    
+//	Implicit  type casting 
+		
+
+	}
+
+}

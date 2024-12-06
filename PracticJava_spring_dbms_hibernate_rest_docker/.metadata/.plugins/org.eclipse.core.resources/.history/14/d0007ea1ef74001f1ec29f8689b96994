@@ -1,0 +1,23 @@
+package com.karthik.core.collections.queues;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class DequeConcept {
+
+	public static void main(String[] args) {
+		
+		//Deque --> ArrayDeque, LinkedList, LinkeBlockingDeque
+		Deque<Integer> dq= new ArrayDeque<Integer>();
+		dq.add(34);
+		dq.addFirst(22);
+		dq.addLast(45);
+		
+		System.out.println(dq);
+		
+		
+		
+
+	}
+
+}

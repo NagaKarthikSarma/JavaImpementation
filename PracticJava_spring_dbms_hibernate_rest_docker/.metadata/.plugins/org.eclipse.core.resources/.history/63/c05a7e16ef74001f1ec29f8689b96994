@@ -1,0 +1,14 @@
+package com.karthik.core.collections.queues;
+
+import java.util.Deque;
+import java.util.Queue;
+
+public class DequeConcept {
+
+	public static void main(String[] args) {
+		Queue<Integer> dq= new Deque<Integer>();
+		
+
+	}
+
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+C:\Users\karth\eclipse-workspace\PracticJava_spring_dbms_hibernate_rest_docker\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1424373563.index
+\ServletJava\src\main\java
+C:\Users\karth\eclipse-workspace\PracticJava_spring_dbms_hibernate_rest_docker\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\211063307.index
+\ServletWeb\src\main\java
+C:\Users\karth\eclipse-workspace\PracticJava_spring_dbms_hibernate_rest_docker\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2929891282.index
+\HelloServlet\src\main\java

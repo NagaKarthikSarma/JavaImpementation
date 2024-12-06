@@ -1,0 +1,14 @@
+package com.karthik.core.datatypes;
+
+public class FirstMain {
+
+	public static void main(String[] args) {
+		System.out.println("hello start your Java journey from starting");
+		System.out.println();
+		System.out.println();
+		System.out.println("-------welcome to world of java programming -------");
+		
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.karthik.docker.entity;
+
+public class Student {
+
+}

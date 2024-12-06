@@ -1,0 +1,22 @@
+package com.karthik;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("com.karthik")
+public class AppConfig {
+	
+//	@Bean 
+//	public Laptop lap() {
+//		return new Laptop();
+//	}
+//	@Bean
+//	public Desktop desc() {
+//		return new Desktop();
+//	}
+
+
+}
+

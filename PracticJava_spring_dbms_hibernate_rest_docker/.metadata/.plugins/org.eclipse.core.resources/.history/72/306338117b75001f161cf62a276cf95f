@@ -1,0 +1,8 @@
+package com.karthik.core.collections.file;
+
+public class FileCreation {
+	public static void main(String[] args) {
+		
+	}
+}
+

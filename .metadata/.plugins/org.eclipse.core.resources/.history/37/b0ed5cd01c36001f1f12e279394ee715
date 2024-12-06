@@ -1,0 +1,23 @@
+package com.karthik;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Laptop {
+	@Autowired
+	Desktop desc;
+	
+	public Desktop getDesc() {
+		return desc;
+	}
+
+	public void setDesc(Desktop desc) {
+		this.desc = desc;
+	}
+
+	public void code() {
+		System.out.println("Spring framework coding");
+		
+		desc.code();
+	}
+
+}

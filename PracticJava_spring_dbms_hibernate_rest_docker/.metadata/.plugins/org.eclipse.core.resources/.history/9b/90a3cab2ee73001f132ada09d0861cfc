@@ -1,0 +1,34 @@
+package com.karthik.core.datatypes;
+
+public class TypeCastingDemo {
+
+	public static void main(String[] args) {
+    
+System.out.println(" ***************** Implicit type casting **************** " );
+//		byte --> short --> int --> long --> float --> double 
+
+		
+		byte  a = (byte) 01010;
+		System.out.println(a);
+		
+	  short s =  a;
+	  System.out.println(s);
+		int i =s;
+		System.out.println(i);
+		
+long l= i;
+System.out.println(l);
+
+float f = l;
+System.out.println(f);
+double d = f;
+System.out.println(d);
+
+
+System.out.println(" ***************** Explicit type casting **************** " );
+
+
+
+	}
+
+}

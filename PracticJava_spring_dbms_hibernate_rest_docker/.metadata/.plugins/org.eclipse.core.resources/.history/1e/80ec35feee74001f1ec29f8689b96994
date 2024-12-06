@@ -1,0 +1,10 @@
+package com.karthik.core.collections.queues;
+
+public class DequeConcept {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

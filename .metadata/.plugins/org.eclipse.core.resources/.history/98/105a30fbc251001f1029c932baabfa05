@@ -1,0 +1,52 @@
+package com.karthik.security;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.karthik.security.model.Users;
+import com.karthik.security.service.JwtService;
+import com.karthik.security.service.UserService;
+
+@RestController
+public class UserController {
+	
+	
+	
+	@Autowired
+private	UserService service;
+
+	@PostMapping("/register")
+	public Users  register(@RequestBody Users user) {
+		
+		
+		
+		return service.saveUser(user);
+	}
+	
+	@Autowired
+ AuthenticationManager authenticationManager;
+	
+	@PostMapping("/login")
+	public String login(@RequestBody Users user) {
+		System.out.println(user.getUsername());
+		System.out.println(user.getPassword());
+//		Authentication authentication = authenticationManager
+//				.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(),user.getPassword()));
+//	
+//	if(authentication.isAuthenticated()) {
+//		
+//		return JwtService.generateToken(user.getUsername());
+//	}
+//	else {
+//		return "error";
+//	}
+		return "hello";
+	}
+
+}

@@ -1,0 +1,53 @@
+package com.karthik.core.datatypes;
+
+import java.util.Scanner;
+
+public class DataTypesStart {
+
+	public static void main(String[] args) {
+		
+try ( Scanner sc = new Scanner(System.in)){ 
+		System.out.print("enter input value:");
+		int var= sc.nextInt();
+		
+		System.out.println("value of input: "+ var);
+		
+		
+		
+}
+		Scanner sc2 = new Scanner(System.in);
+			System.out.print("enter input value:");
+			
+			float var3= sc2.nextFloat();
+			
+			System.out.println("value of input: "+ var3);
+			
+			
+			System.out.print("enter input value:");
+			char var1= 'c';
+			
+			System.out.println("value of input: "+ var1);
+			
+			
+			System.out.print("enter input value:");
+			String var2= sc2.next();
+			
+			System.out.println("value of input: "+ var2);
+		
+	
+		
+	
+// we don't need to close the resource leak Scanner when we use in try block
+
+
+
+
+
+catch(Exception e) {
+System.out.println(e);
+}
+	
+	// we don't need to close the resource leak Scanner when we use in try block
+	}
+
+}

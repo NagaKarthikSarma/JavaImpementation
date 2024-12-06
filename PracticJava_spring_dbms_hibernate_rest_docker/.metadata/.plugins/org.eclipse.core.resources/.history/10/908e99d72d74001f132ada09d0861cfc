@@ -1,0 +1,20 @@
+package com.karthik.core.collections;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListCollect {
+
+	public static void main(String[] args) {
+	
+List<String> li = new LinkedList<String>(); 
+li.add("karthik");
+li.add(0,"naga");
+li.add("sarma");
+li.add("baruri");
+
+
+
+	}
+
+}

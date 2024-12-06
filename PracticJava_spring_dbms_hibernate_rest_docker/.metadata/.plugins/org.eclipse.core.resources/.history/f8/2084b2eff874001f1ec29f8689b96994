@@ -1,0 +1,10 @@
+package com.karthik.core.collections.threading;
+
+public class MultithreradConc extends Thread{
+
+	public static void main(String[] args) {
+    
+
+	}
+
+}

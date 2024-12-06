@@ -1,0 +1,22 @@
+package com.karthik.core.collections.file;
+
+import java.io.File;
+import java.io.IOException;
+
+public class FileCreation {
+	public static void main(String[] args) throws IOException {
+		
+		File directory = new File("A_hydrogen_corejava\\karthik");
+		
+		directory.mkdir();
+		File file = new File("A_hydrogen_corejava\\karthik\\karthik.txt");
+
+file.createNewFile();// creating a file
+//it shows exception so we are throwing exception
+System.out.println("file created");
+ 
+		
+		
+	}
+}
+

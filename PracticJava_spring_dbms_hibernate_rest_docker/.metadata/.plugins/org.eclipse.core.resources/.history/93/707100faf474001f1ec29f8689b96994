@@ -1,0 +1,21 @@
+package com.karthik.core.collections.lists;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MappHashTree {
+
+	public static void main(String[] args) {
+	
+		Map<Integer,String> mapping = new HashMap<Integer,String>();
+		
+     mapping.put(1, "naga");
+     mapping.put(2, "karthik");
+     mapping.put(3, "sarma");
+     
+     
+		
+		
+	}
+
+}

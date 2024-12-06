@@ -1,0 +1,5 @@
+package com.karthik.docker.repo;
+
+public class StudentRepo {
+
+}

@@ -1,0 +1,25 @@
+package com.karthik.docker.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.karthik.docker.enitity.Student;
+import com.karthik.docker.repo.StudentRepo;
+@RestController
+public class StudentController {
+	
+	StudentRepo repo;
+	
+	public List<Student> getStudents(){
+		
+		return List.of(new Student(1,"karthik",22),
+				new Student(2,"sarma",22),
+				new Student(3,"naga",22)
+				);
+		
+		
+	}
+	
+
+}

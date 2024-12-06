@@ -1,0 +1,10 @@
+package com.karthik.core.collections.queues;
+
+public class BlockingConcept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

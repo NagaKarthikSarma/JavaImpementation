@@ -1,0 +1,24 @@
+package com.karthik;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Hello {
+
+	public static void main(String[] args) {
+try {		
+	ApplicationContext  context = new ClassPathXmlApplicationContext("Spring.xml");
+		
+		
+		Laptop lap = context.getBean("lap",Laptop.class);
+		lap.code();
+		((ConfigurableApplicationContext) context).close();
+}
+finally {
+	
+}
+	}
+
+}

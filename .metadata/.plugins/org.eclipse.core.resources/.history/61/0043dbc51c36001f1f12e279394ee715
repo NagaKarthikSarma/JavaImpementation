@@ -1,0 +1,20 @@
+package com.karthik;
+
+public class Laptop {
+	Desktop desc;
+	
+	public Desktop getDesc() {
+		return desc;
+	}
+
+	public void setDesc(Desktop desc) {
+		this.desc = desc;
+	}
+
+	public void code() {
+		System.out.println("Spring framework coding");
+		
+		desc.code();
+	}
+
+}

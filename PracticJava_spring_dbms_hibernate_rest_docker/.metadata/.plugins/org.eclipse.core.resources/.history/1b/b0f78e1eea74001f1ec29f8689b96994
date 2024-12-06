@@ -1,0 +1,48 @@
+package com.karthik.core.collections.queues;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.PriorityBlockingQueue;
+
+public class BlockingConcept  {
+
+	public static void main(String[] args) {
+		PriorityBlockingQueue<Integer> abq = new PriorityBlockingQueue<Integer>();
+		
+		
+		Thread produce = new Thread(() -> {
+			
+			try {
+				for(int i=0; i<5;i++) {
+					abq.put(i);
+					Thread.sleep(1000);
+				}
+			}
+			catch(Exception e) {
+				
+			}
+			
+		});
+	
+	Thread consume = new Thread(() -> {
+			
+			try {
+				for(int i=0; i<5;i++) {
+			System.out.print("removed element : ");
+			abq.take();
+			System.out.println();
+					Thread.sleep(1000);
+				}
+			}
+			catch(Exception e) {
+				
+			}
+			
+		});
+	
+	
+	produce.start();
+	consume.start();
+	}
+
+	
+}

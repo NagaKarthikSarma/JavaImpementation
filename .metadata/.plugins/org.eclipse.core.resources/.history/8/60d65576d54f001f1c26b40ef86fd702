@@ -1,0 +1,28 @@
+package com.karthik.security;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.karthik.security.model.Users;
+import com.karthik.security.service.UserService;
+
+@RestController
+public class UserController {
+	
+	
+	
+	@Autowired
+private	UserService service;
+
+	@PostMapping("/register")
+	public Users  register(@RequestBody Users user) {
+		
+		
+		return service.saveUser(user);
+	}
+	
+
+}

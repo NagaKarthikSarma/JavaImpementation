@@ -1,0 +1,19 @@
+package com.karthik.core.collections;
+
+import java.util.ArrayList;
+
+public class ArrayCollect {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer>  array = new ArrayList<Integer>();
+		
+		array.add(45);
+		array.add(54);
+		array.add(67);
+		System.out.println(array);
+	
+
+	}
+
+}

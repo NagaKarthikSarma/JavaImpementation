@@ -1,0 +1,98 @@
+package com.karthik;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+
+
+@RestController
+@Configuration
+public class HomeController {
+	private JdbcTemplate jdbc;
+
+	public JdbcTemplate getJdbc() {
+		return jdbc;
+	}
+@Autowired
+	public void setJdbc(JdbcTemplate jdbc) {  
+		this.jdbc = jdbc;
+	}
+@Autowired
+HomeController hc;
+
+@Value("jdbc:mysql://localhost:3306/jdbc")
+private String jdbcUrl;
+
+@Value("root")
+private String username;
+
+@Value("D@ngereag1e")
+private String password;
+
+@Bean
+public DataSource ds() {
+    DriverManagerDataSource dataSource = new DriverManagerDataSource();
+    dataSource.setUrl(jdbcUrl);
+    dataSource.setUsername(username);
+    dataSource.setPassword(password);
+    return dataSource;
+}
+@Bean
+public JdbcTemplate jdbcTemplate(DataSource datasource) {
+    return new JdbcTemplate(datasource);
+}
+
+public List<Student> findAll() {
+	String sql = "select * from student;";
+	RowMapper<Student> map = new RowMapper<Student>() {
+
+		@Override
+		public Student mapRow(ResultSet rs, int rowNum) throws SQLException {
+		
+			Student s = new Student();
+		s.setRollno(rs.getInt("rollno"));
+			s.setSname(rs.getString("sname"));
+			
+			return s;
+		}
+		
+	};
+	
+	return jdbc.query(sql,map);
+}
+	
+	
+	
+	@Autowired
+	JdbcCon con;
+	
+	@GetMapping("/hello")
+	public List<Student>  getDetails() {
+		List<Student> li = hc.findAll();
+		System.out.println("hii");
+	
+		return li;
+	}
+	@RequestMapping("/index")
+public String getData() {
+	
+	return "index";
+}
+
+}

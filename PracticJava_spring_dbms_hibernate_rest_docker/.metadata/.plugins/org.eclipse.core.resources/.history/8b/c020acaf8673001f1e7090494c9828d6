@@ -1,0 +1,17 @@
+package com.karthik.core.datatypes;
+
+import java.util.Scanner;
+
+public class DataTypesStart {
+
+	public static void main(String[] args) {
+		
+	Scanner sc = new Scanner(System.in);
+		System.out.print("enter input value:");
+		int var= sc.nextInt();
+		
+		System.out.println("values of input: "+ var);
+	
+	}
+
+}

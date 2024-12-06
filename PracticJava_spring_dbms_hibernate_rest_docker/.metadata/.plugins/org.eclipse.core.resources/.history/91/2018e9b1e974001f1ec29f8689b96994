@@ -1,0 +1,22 @@
+package com.karthik.core.collections.queues;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.PriorityBlockingQueue;
+
+public class BlockingConcept extends Thread {
+
+	public static void main(String[] args) {
+		PriorityBlockingQueue<Integer> abq = new PriorityBlockingQueue<Integer>();
+		
+		BlockingConcept t1 = new BlockingConcept();
+		
+t1.start();
+	}
+
+	public void run() {
+		
+		
+	
+		System.out.println("hello");
+	}
+}

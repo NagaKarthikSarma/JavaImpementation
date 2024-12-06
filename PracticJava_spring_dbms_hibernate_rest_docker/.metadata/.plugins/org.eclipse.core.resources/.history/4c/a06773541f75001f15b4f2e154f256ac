@@ -1,0 +1,39 @@
+package com.karthik.core.collections.threading;
+
+public class RaceConditions implements Runnable {
+
+	public static void main(String[] args) {
+		
+		//synchronized method
+		//synchronized block
+		
+   Thread t1 = new Thread(new RaceConditions());
+   
+   Thread t2 = new Thread(new RaceConditions());
+   t1.start();
+   t2.start();
+	}
+
+	@Override
+	public void run() {
+		int a =0;
+		synchronized(this){
+	
+		for (a=0;a<10;a++) {
+			System.out.println("the value of a: " + a + " "+Thread.currentThread().getName());
+		}
+		}
+		System.out.println("the value of hello: "+Thread.currentThread().getName()+"  "+);
+	}
+	
+	public synchronized int hello() {
+		int a = 0;
+		for(a=0;a<1000;a++) {
+			a=a++;
+			
+		}
+		return a;
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.karthik.avatar;
+
+public class Avatar {
+	
+public void code() {
+	System.out.println("hello avatar");
+}
+
+}

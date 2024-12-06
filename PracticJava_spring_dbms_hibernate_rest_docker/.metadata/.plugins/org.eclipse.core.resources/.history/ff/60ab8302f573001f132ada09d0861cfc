@@ -1,0 +1,39 @@
+package com.karthik.core.datatypes;
+
+public class Classes {
+
+	public static void main(String[] args) {
+			
+
+	}
+	
+	public void localInnerClass() {
+		class B{
+			
+			public void hello() {
+				System.out.println (" local Inner Class ");
+			}
+		}
+		
+	}
+	
+	
+	
+	
+	
+	class MemberInnerClass{
+		public void hello() {
+			System.out.println (" member inner class ");
+		}
+		
+	}
+	
+	static class staticNestedClass{
+		
+		public void hello() {
+			System.out.println (" static nested class " );
+		}
+	}
+	
+}
+

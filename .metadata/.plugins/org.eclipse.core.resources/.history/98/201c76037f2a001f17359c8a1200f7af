@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+<!-- 
+ <bean id="Aliean" class="cotrollers.Aliean" scope="prototype">
+<constructor-arg index="0" value ="21"/> 
+<constructor-arg  index="1" ref="lap1"/>
+<constructor-arg name="age" value ="21"/> 
+<constructor-arg  name="lap" ref="com1"/> 
+
+ <property name="age" value="22"></property>
+<property name="lap"  ref="lap1"></property>
+
+ 
+</bean> -->
+
+<bean id="Aliean" class="cotrollers.Aliean" autowire="byType"  >
+
+ <!--  <property name="age" value="22"></property >
+   
+<property name="lap"  ref="lap1"></property> -->
+
+<constructor-arg name="age" value ="21"/> 
+<constructor-arg  name="lap" ref="com1" /> 
+
+ 
+</bean>
+
+<bean id ="com1" class="cotrollers.Desktop" ></bean>
+  
+<bean id="com2" class ="cotrollers.Laptop" ></bean> 
+</beans>

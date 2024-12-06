@@ -1,0 +1,13 @@
+package com.karthik.core.datatypes;
+
+public class Classes {
+
+	public static void main(String[] args) {
+		
+		class Hello{
+			System.out.println("in method class");
+		}
+
+	}
+
+}

@@ -1,0 +1,52 @@
+package com.karthik.core.collections;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListCollect {
+
+	public static void main(String[] args) {
+	
+List<String> li = new LinkedList<String>(); 
+li.add("karthik");
+li.add(0,"naga");
+li.add("sarma");
+li.add("baruri");
+
+System.out.println(li);
+
+li.sort((o1, o2) -> {
+	if(o1.length() > o2.length()) {
+		
+		return 1;	
+	}
+if(o1.length() < o2.length()) {
+		
+		return -1;	
+	}
+	return 0;
+
+
+});
+
+System.out.println("---------- sorted list --------------");
+System.out.println(li);
+
+List<Hello> hli = new LinkedList<Hello>();
+
+hli.add(new Hello(1,"karthik"));
+
+
+	}
+}
+
+class Hello{
+	public Hello(int i, String string) {
+		this.age=age;
+		this.name=name;
+	}
+	public int age;
+	public int name;
+	
+}
+

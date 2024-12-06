@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+   <%@ page import ="/Zeb_JAVAEE/src/main/java/org/karthik/com/HelloClass"; %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> Hello world</h1>
+<%= "Expression " %>
+<br/>
+<%= new Integer(33) %>
+<br>
+<%= 23 %>
+<br>
+
+<%= "---------Declartion----------" %>
+<%! public  int k=23; %> 
+<br>
+<%!
+	%>
+
+
+<br>
+<%=k %>
+
+<%= "---------Scriptlets----------" %>
+<br>
+<%new HelloClass().demo(); %>
+<%
+int x=25;
+out.println(x);
+out.println("<br>");
+if(x>25){
+
+	out.println("x is greater");
+}
+else{
+	out.println("x is smaller");
+}
+%>
+</body>
+</html>    

@@ -1,0 +1,16 @@
+package com.karthik.core.collections.sets;
+
+import java.util.HashSet;
+
+public class HashLinkTreeSet {
+
+	public static void main(String[] args) {
+	  
+		HashSet<Integer> set= new HashSet<Integer>();
+		
+		
+		
+
+	}
+
+}

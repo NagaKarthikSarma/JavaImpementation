@@ -1,0 +1,33 @@
+package com.karthik.core.collections.lists;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MappHashTree {
+
+	public static void main(String[] args) {
+	
+		Map<Integer,String> mapping = new HashMap<Integer,String>();	
+     mapping.put(1, "naga");
+     mapping.put(2, "karthik");
+     mapping.put(3, "sarma");
+     System.out.println(mapping);
+     mapping.forEach((t, u) -> {
+     System.out.println(t);
+     System.out.println(u); 
+	} );
+
+     for (Map.Entry<Integer, String>  mn : mapping.entrySet()) {
+    	 
+    	 System.out.println(mn.getKey()+"---"+mn.getValue());
+    	 
+		
+	}
+
+     
+     
+		
+		
+	}
+
+}

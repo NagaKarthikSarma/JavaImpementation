@@ -1,0 +1,3 @@
+INDEX VERSION 1.134
+C:\Users\karth\eclipse-workspace\Spring_Framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3294687160.index
+\hello\src\main\resources

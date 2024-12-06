@@ -1,0 +1,18 @@
+package com.karthik.core.datatypes;
+
+public class Classes {
+
+	public static void main(String[] args) {
+			
+
+	}
+	class Hello{
+		public void hello() {
+			System.out.println ("member inner classs");
+		}
+		
+	}
+	
+	
+	
+}

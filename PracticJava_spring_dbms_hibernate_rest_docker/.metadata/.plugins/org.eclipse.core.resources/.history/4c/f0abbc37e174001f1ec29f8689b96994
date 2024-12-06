@@ -1,0 +1,30 @@
+package com.karthik.core.collections.queues;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
+
+public class Queuesim {
+
+	public static void main(String[] args) {
+     
+		
+		List<Integer> qu = new ArrayBlockingQueue<Integer>(10); // the capacity need to be specified
+		
+		qu.add(34);
+		qu.add(45);
+		//qu.offer(23);
+		
+		System.out.println(qu);
+		
+		Collections.sort(qu);
+		
+		
+		
+		
+		
+ 
+	}
+
+}

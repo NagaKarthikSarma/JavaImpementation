@@ -1,0 +1,13 @@
+package com.karthik.core.datatypes;
+
+public class TypeCastingDemo {
+
+	public static void main(String[] args) {
+    
+//	Implicit  type casting 
+//		byte --> short --> int --> long --> float --> double 
+//		char --> String
+
+	}
+
+}

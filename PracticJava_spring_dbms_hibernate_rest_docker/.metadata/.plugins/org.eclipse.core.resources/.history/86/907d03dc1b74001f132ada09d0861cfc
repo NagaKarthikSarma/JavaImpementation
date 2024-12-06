@@ -1,0 +1,36 @@
+package com.karthik.core.oops;
+
+public class PolymorphismExam {
+
+	public  int add(int a, int b) {
+		
+		return a+b;
+	}
+	public  int add(int a, int b,int c) {
+		
+		return a+b+c;
+	}
+	
+	public static void main(String[] args) {
+//		 polymorphism -> Compile time polymorphism 
+		
+		PolymorphismExam ctp = new PolymorphismExam();
+		
+	System.out.println(	ctp.add(45,56));
+	
+	System.out.println(	ctp.add(45,56,67));
+
+//	 polymorphism -> Runtime polymorphism 
+	
+	
+	}
+	
+	
+
+}
+class RuntimePoly{
+	
+	public int add(int a, int b) {
+		return a+b;
+	}
+}

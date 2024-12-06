@@ -1,0 +1,20 @@
+spring.application.name=xpgAdminSpring
+
+
+spring.datasource.driver-class-name=com.postgress.cj.jdbc.Driver
+
+spring.datasource.url=jdbc:postgressql://localhost:5432/jdbc
+spring.datasource.username=postgres
+spring.datasource.password=D@ngereag1e
+
+# Specify explicitly the dialect (here for PostgreSQL, adapt for your database)
+spring.jpa.database-platform=org.hibernate.dialect.PostgresSQLDialect
+
+# Disable Hibernate usage of JDBC metadata
+#spring.jpa.properties.hibernate.boot.allow_jdbc_metadata_access=false
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql= true
+spring.sql.init.platform=postgres
+spring.sql.init.mode=never
+
+

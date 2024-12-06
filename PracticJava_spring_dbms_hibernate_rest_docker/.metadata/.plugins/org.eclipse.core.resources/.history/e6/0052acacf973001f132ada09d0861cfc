@@ -1,0 +1,22 @@
+package com.karthik.core.datatypes;
+
+
+
+public class AutoboxAndUnbox {
+
+	public static void main(String[] args) {
+		
+		int a=55;
+		
+		Integer ing = a;
+		
+		System.out.println(ing);
+		
+		char ct = 'c';
+		Character cx = ct;
+		
+		
+		
+	}
+
+}
